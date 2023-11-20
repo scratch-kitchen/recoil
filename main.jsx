@@ -249,12 +249,12 @@ function reconcileChildren(wipFiber, elements) {
   }
 }
 
-const ClapBack = {
+const Recoil = {
   createElement,
   render,
 };
 
-/** @jsx ClapBack.createElement */
+/** @jsx Recoil.createElement */
 const container = document.getElementById("root");
 
 const updateValue = (e) => {
@@ -268,7 +268,7 @@ const rerender = (value) => {
       <h2>Hello {value}</h2>
     </div>
   );
-  ClapBack.render(element, container);
+  Recoil.render(element, container);
 };
 
 rerender("World");
