@@ -284,15 +284,15 @@ function reconcileChildren(wipFiber, elements) {
   }
 }
 
-const ClapBack = {
+const Recoil = {
   createElement,
   render,
   useState,
 };
 
-/** @jsx ClapBack.createElement */
+/** @jsx Recoil.createElement */
 function Counter() {
-  const [state, setState] = ClapBack.useState(1);
+  const [state, setState] = Recoil.useState(1);
   return (
     <h1
       style={{
@@ -309,4 +309,4 @@ function Counter() {
 }
 const element = <Counter />;
 const container = document.getElementById("root");
-ClapBack.render(element, container);
+Recoil.render(element, container);
